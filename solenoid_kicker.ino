@@ -8,10 +8,10 @@ void setup() {
 }
 
 void loop() {  
-  int val = digitalRead(Lsen);
+  int val = analogRead(Lsen);
   Serial.println(val);
 
- if(val == 1){
+ if(val == 100) //後で調整{
   digitalWrite(skick,HIGH);
  }
 }
